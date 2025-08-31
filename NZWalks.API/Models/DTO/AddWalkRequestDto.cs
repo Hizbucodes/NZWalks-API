@@ -16,7 +16,7 @@ namespace NZWalks.API.Models.DTO
         public string? WalkImageUrl { get; set; }
         [Required]
         public Guid DifficultyId { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Region is Required")]
         public Guid RegionId { get; set; }
     }
 }
