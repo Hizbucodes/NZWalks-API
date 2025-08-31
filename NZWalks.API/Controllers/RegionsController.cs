@@ -62,6 +62,12 @@ namespace NZWalks.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] AddRegionRequestDto addRegionRequestDto)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             // Map or Convert DTO to Domain Model
             var regionDomainModel = mapper.Map<Region>(addRegionRequestDto);
 
@@ -81,6 +87,11 @@ namespace NZWalks.API.Controllers
         [Route("{id:Guid}")]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDto updateRegionRequestDto)
         {
+            if (!ModelState.IsValid)
+            { 
+                return BadRequest(ModelState);
+            }
+
             //Map DTO to Domain Model
 
             var regionDomainModel = mapper.Map<Region>(updateRegionRequestDto);
