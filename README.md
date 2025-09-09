@@ -15,8 +15,7 @@ This API provides CRUD operations for managing walking trails in New Zealand whi
 - ✅ **Authentication & Authorization** with JWT  
 - ✅ **Image Upload Functionality** to store and serve images  
 - ✅ **Azure Deployment** for cloud hosting  
-- ✅ **API Versioning** to support evolving endpoints  
-- ✅ **MVC Architecture** for clean separation of concerns  
+- ✅ **API Versioning** to support evolving endpoints    
 - ✅ **AutoMapper** for mapping between DTOs and models  
 - ✅ **Model Validation** using Data Annotations  
 - ✅ **Centralized Logging** for monitoring API activities  
